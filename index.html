@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <!-- OGP画像 -->
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="#" />
+    <meta property="og:description" content="#" />
+    <meta property="og:site_name" content="#" />
+    <meta property="og:image" content="#" />
+
+    <!-- Googleフォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- タイトル・ディスクリプション -->
+    <meta name="description" content="仮のテキストです" />
+    <title>株式会社AROUTECH</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link"
+            ><img src="./img/logo_black_yoko.png" alt="TaskMentorAIのロゴ"
+          /></a>
+        </div>
+        <div class="header__contents">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#pick">導入事例</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#function">機能紹介</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#price">料金システム</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#qa">よくある質問</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">会社概要</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__register">
+            <ul class="header__register-list">
+              <li class="header__login">
+                <a class="header__login-link" href="#">ログイン</a>
+              </li>
+              <li class="header__free">
+                <a class="header__free-button" href="#" role="button"
+                  >無料アカウント登録</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ハンバーガーボタン -->
+    <div class="humberger__box">
+      <button class="humberger__menu" id="js-humberger__button">
+        <span class="humberger__bar"></span>
+        <span class="humberger__bar"></span>
+      </button>
+    </div>
+
+    <!-- drawer -->
+    <div class="drawer" id="js-drawer">
+      <div class="drawer__contents">
+        <nav class="drawer__nav">
+          <ul class="drawer__list">
+            <li class="drawer__item">
+              <a href="#about">TOP</a>
+            </li>
+            <li class="drawer__item"><a href="#pick">導入事例</a></li>
+            <li class="drawer__item"><a href="#function">機能紹介</a></li>
+            <li class="drawer__item"><a href="#price">料金システム</a></li>
+            <li class="drawer__item"><a href="#qa">よくある質問</a></li>
+            <li class="drawer__item"><a href="#company">会社概要</a></li>
+            <li class="drawer__item"><a href="#">ログイン</a></li>
+          </ul>
+        </nav>
+        <div class="drawer__register">
+          <a class="drawer__free" href="#" role="button"
+            ><span class="drawer__free-icon"
+              ><img src="./img/man_icon.png" alt="人型のアイコン" /></span
+            ><span class="drawer__free-text">無料アカウント登録をする</span></a
+          >
+          <a class="drawer__contact" href="#" role="button"
+            ><span class="drawer__contact-icon"
+              ><img src="./img/mail_icon.png" alt="メールのアイコン" /></span
+            ><span class="drawer__contact-text"
+              >ビジネスプランを問い合わせる</span
+            ></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- mv -->
+    <section class="mv" id="mv">
+      <div class="mv__inner">
+        <div class="mv__contents">
+          <h1 class="mv__head">
+            ビジネス成長の<br />最強パートナーに<span>AI</span>を。
+          </h1>
+          <p class="mv__text">
+            関連特許取得済みのAIエージェント機能を搭載した、<br />業務改善やAI活用人材育成のサポートシステム
+          </p>
+          <div class="mv__img">
+            <img src="./img/concept_mv.png" alt="企業の強みについて" />
+          </div>
+          <div class="mv__register">
+            <a class="mv__free" href="#" role="button"
+              ><span class="mv__free-icon"
+                ><img src="./img/man_icon.png" alt="人型のアイコン" /></span
+              ><span class="mv__free-text">無料アカウント登録をする</span></a
+            >
+            <a class="mv__contact" href="#" role="button"
+              ><span class="mv__contact-icon"
+                ><img src="./img/mail_icon.png" alt="メールのアイコン" /></span
+              ><span class="mv__contact-text"
+                >ビジネスプランを問い合わせる</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- mv-form -->
+      <div class="form">
+        <div class="form__fields">
+          <div class="form-field">
+            <label for="your-name" class="form-field__label"
+              >メールアドレス</label
+            >
+            <div class="form-field__item">
+              <input
+                class="form-text"
+                type="text"
+                name="your-email"
+                id="your-email"
+                placeholder="sample@sample.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="your-email" class="form-field__label">パスワード</label>
+            <div class="form-field__item">
+              <input
+                class="form-text"
+                type="email"
+                name="your-pass"
+                id="your-pass"
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="your-email" class="form-field__label"
+              >確認用パスワード</label
+            >
+
+            <div class="form-field__item">
+              <input
+                class="form-text"
+                type="email"
+                name="your-checkpass"
+                id="your-checkpass"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="button__fields">
+          <div class="contact__checkbox">
+            <label class="form-checkbox">
+              <input
+                type="checkbox"
+                name="your-privacy"
+                class="form-checkbox__input"
+              />
+              <span class="form-checkbox__text"
+                ><a href="">利用規約</a>と<a href="#" target="_blank"
+                  >プライバシーポリシー</a
+                >に同意します</span
+              >
+            </label>
+          </div>
+          <div class="form__button">
+            <a class="form__free" href="#" role="button"
+              ><span class="form__free-icon"
+                ><img src="./img/man_icon.png" alt="人型のアイコン" /></span
+              ><span class="form__free-text">無料アカウント登録をする</span></a
+            >
+            <p class="form__devide">or</p>
+            <a class="form__contact" href="#" role="button"
+              ><span class="form__contact-icon"
+                ><img src="./img/mail_icon.png" alt="メールのアイコン" /></span
+              ><span class="form__contact-text"
+                >ビジネスプランを問い合わせる</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resason -->
+    <section class="reason" id="reason">
+      <!-- answer -->
+      <div class="answer">
+        <div class="answer__contents">
+          <div class="answer__img">
+            <img src="./img/logo_black_tate.png" alt="" />
+          </div>
+          <div class="answer__text">
+            <h2 class="answer__head">AI活用のこんな課題を解決します</h2>
+            <p class="answer__word">AI活用に関する知識/人材不足</p>
+            <p class="answer__word">効果的なAI活用で業務改善したい</p>
+            <p class="answer__word">AI活用でビジネスを成長させたい</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__inner">
+        <h2 class="section__head">
+          <span class="section__head-main">Reason</span>
+          <span class="section__head-sub">選ばれる３つの理由</span>
+        </h2>
+        <div class="reason__contents">
+          <div class="reason__card">
+            <div class="reason__img">
+              <img src="./img/ai_reason.jpg" alt="AIの文字" />
+            </div>
+            <div class="reason__text">
+              <h3 class="reason__head">
+                <span class="reason__head-sub">Reason 01</span>
+                <span class="reason__head-main"
+                  >AI活用の最新情報を無料で閲覧可能！</span
+                >
+              </h3>
+              <p class="reason__para">
+                AIソリューションは進歩と陳腐化が激しく、最新情報をキャッチアップできることが重要です。本サービスで分散している情報収集を一元管理可能なため、登録して頂くだけで一定のAIリテラシーが身につきます。<br />
+                また、わたしたちのチームには、グローバルで優秀なR&Dチームと、熟練したプロダクト開発チームがいるため、常にプロダクトをアップデートできる体制が整っています。
+              </p>
+            </div>
+          </div>
+
+          <div class="reason__card">
+            <div class="reason__img">
+              <img src="./img/robot_reason.jpg" alt="作業する人型のロボット" />
+            </div>
+            <div class="reason__text">
+              <h3 class="reason__head">
+                <span class="reason__head-sub">Reason 02</span>
+                <span class="reason__head-main"
+                  >AIエージェントによる業務改善サポートが受けられる！</span
+                >
+              </h3>
+              <p class="reason__para">
+                AIエージェントとは、与えられたゴールに対して、LLMモデル（chatGPT-4やClaude2など）を用いて自立的に動作するソフトウェアのことです。ドキュメント作成支援や、議事録の文字起こしと要約、自身のジョブ（スキル）の棚卸しなど、あなたの最強パートナーとして業務をサポートしてくれます。入力した情報が学習に使われることはなく、セキュリティ面でも安心です。
+              </p>
+            </div>
+          </div>
+
+          <div class="reason__card">
+            <div class="reason__img">
+              <img src="./img/brain_reason.jpg" alt="脳の模型" />
+            </div>
+            <div class="reason__text">
+              <h3 class="reason__head">
+                <span class="reason__head-sub">Reason 03</span>
+                <span class="reason__head-main"
+                  >AI活用人材を育成する教育体制が整っている！</span
+                >
+              </h3>
+              <p class="reason__para">
+                AIはパートナーであり、まずは理解することが重要です。わたしたちは、生成AIをはじめとする研修プログラムを1,000以上保有しており、業務改善コンサルティングで、業務課題解決に繋がるAIソリューションの提案やレクチャーを行っています。<br />
+                AIの根幹から学び、業務に応用できる教育体制を持っています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pick" id="pick">
+      <div class="pick__inner">
+        <h2 class="section__head section__head-white">
+          <span class="section__head-main">Pick Up</span>
+          <span class="section__head-sub">導入事例</span>
+        </h2>
+        <div class="pick__contents">
+          <!-- Slider main container -->
+          <div class="swiper pick__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper pick__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide pick__slide">
+                <div class="pick__card">
+                  <div class="pick__img">
+                    <img src="./img/office_pick.jpg" alt="おしゃれなオフィス" />
+                  </div>
+                  <div class="pick__text">
+                    <p class="pick__place">株式会社〇〇〇〇</p>
+                    <p class="pick__word">
+                      TaskMentorAIの導入により、教職員がAIエージェントを利用して、教育研究業務の効率向上しました。また、学内のAIリテラシーも向上しました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide pick__slide">
+                <div class="pick__card">
+                  <div class="pick__img">
+                    <img src="./img/diversity_pick.jpg" alt="肩を組む人たち" />
+                  </div>
+                  <div class="pick__text">
+                    <p class="pick__place">株式会社〇〇〇〇</p>
+                    <p class="pick__word">
+                      TaskMentorAIの導入により、教職員がAIエージェントを利用して、教育研究業務の効率向上しました。また、学内のAIリテラシーも向上しました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide pick__slide">
+                <div class="pick__card">
+                  <div class="pick__img">
+                    <img src="./img/professor_pick.jpg" alt="大学の研究者" />
+                  </div>
+                  <div class="pick__text">
+                    <p class="pick__place">株式会社〇〇〇〇</p>
+                    <p class="pick__word">
+                      TaskMentorAIの導入により、教職員がAIエージェントを利用して、教育研究業務の効率向上しました。また、学内のAIリテラシーも向上しました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide pick__slide">
+                <div class="pick__card">
+                  <div class="pick__img">
+                    <img src="./img/woman_pick.jpg" alt="パソコンを見る女性" />
+                  </div>
+                  <div class="pick__text">
+                    <p class="pick__place">株式会社〇〇〇〇</p>
+                    <p class="pick__word">
+                      TaskMentorAIの導入により、教職員がAIエージェントを利用して、教育研究業務の効率向上しました。また、学内のAIリテラシーも向上しました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide pick__slide">
+                <div class="pick__card">
+                  <div class="pick__img">
+                    <img src="./img/office_pick.jpg" alt="おしゃれなオフィス" />
+                  </div>
+                  <div class="pick__text">
+                    <p class="pick__place">株式会社〇〇〇〇</p>
+                    <p class="pick__word">
+                      TaskMentorAIの導入により、教職員がAIエージェントを利用して、教育研究業務の効率向上しました。また、学内のAIリテラシーも向上しました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination pick__swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev pick__swiper-button-prev"></div>
+            <div class="swiper-button-next pick__swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cv -->
+    <section class="cv">
+      <div class="cv__inner">
+        <div class="cv__contents">
+          <div class="cv__card">
+            <p class="cv__free-word">
+              ＼1分で登録完了！／<br />AI活用の最新情報を取得！
+            </p>
+            <div class="cv__button-wrapper">
+              <a class="cv__free-button" href="#" role="button"
+                ><span class="cv__free-icon"
+                  ><img src="./img/man_icon.png" alt="人型のアイコン" /></span
+                ><span class="cv__free-text">無料アカウント登録をする</span></a
+              >
+            </div>
+          </div>
+
+          <div class="cv__card">
+            <p class="cv__contact-word">
+              弊社が提供する生成AI研修のカリキュラム<br />
+              （180ページ分）とAI活用事例集をプレゼント！
+            </p>
+            <div class="cv__button-wrapper">
+              <a class="cv__contact-button" href="#" role="button"
+                ><span class="cv__contact-icon"
+                  ><img src="./img/mail_icon.png" alt="人型のアイコン" /></span
+                ><span class="cv__contact-text"
+                  >ビジネスプランを問い合わせる</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- function -->
+    <section class="function" id="function">
+      <div class="function__inner">
+        <h2 class="section__head">
+          <span class="section__head-main">Function</span>
+          <span class="section__head-sub">TaskMentorAIの7つの機能</span>
+        </h2>
+        <div class="function__contents">
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text">AI Tips機能</span>
+            </h3>
+            <p class="function__text">
+              最新のAIやTech情報、活用事例、Tipsを閲覧可能です。弊社チームが日々情報収集と検証を行なっており、AI専門家がコメントをした上での情報を受け取れます。
+            </p>
+          </div>
+
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text">AI/ITツール検索機能</span>
+            </h3>
+            <p class="function__text">
+              日々進化するAI/ITツール情報を整理し、まとめています。あなたの業務や課題に合ったAI/ITツールを検索することがができます。
+            </p>
+          </div>
+
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text">AIエージェント機能</span>
+            </h3>
+            <p class="function__text">
+              常にアップデートされるLLMモデル（chatGPT-4やClaude2など）を利用可能です。<br />
+              「ドキュメント作成支援」「会議録データ整理」「データ分析」「ジョブ診断」など、あなたの仕事をサーポートするエージェント機能を使用することができます。
+            </p>
+          </div>
+
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text">プロンプト設定機能</span>
+            </h3>
+            <p class="function__text">
+              プロンプトとは、生成AIに指示を出すときのフォーマットで、よく使うプロンプトを設定することはもちろん、おすすめのプロンプトを利用することが可能です。
+              <br />いつでもエージェント機能から呼び出すことができます。
+            </p>
+          </div>
+
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text">ロール設定機能</span>
+            </h3>
+            <p class="function__text">
+              コンサルタントやWebマーケター、コーチなど、あなたが希望するエージェントの役割（ロール）を設定することが可能です。設定されたエージェントロールによりサポートの内容が変わります。
+            </p>
+          </div>
+
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text"
+                >AI業務改善提案機能<br />（AI-OJT機能）</span
+              >
+            </h3>
+            <p class="function__text">
+              業務課題を登録すると、AIが課題の内容を分析し、解決ソリューションを提案します。
+            </p>
+          </div>
+
+          <div class="function__card">
+            <h3 class="function__head">
+              <span class="function__head-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 31.5C6.675 31.5 5.96875 31.2063 5.38125 30.6188C4.79375 30.0313 4.5 29.325 4.5 28.5V7.5C4.5 6.675 4.79375 5.96875 5.38125 5.38125C5.96875 4.79375 6.675 4.5 7.5 4.5H28.5C29.325 4.5 30.0313 4.79375 30.6188 5.38125C31.2063 5.96875 31.5 6.675 31.5 7.5V28.5C31.5 29.325 31.2063 30.0313 30.6188 30.6188C30.0313 31.2063 29.325 31.5 28.5 31.5H7.5ZM7.5 28.5H28.5V10.5H7.5V28.5ZM10.5 18V15H25.5V18H10.5ZM10.5 24V21H19.5V24H10.5Z"
+                    fill="#599CC2"
+                  /></svg></span
+              ><span class="function__head-text">チーム機能</span>
+            </h3>
+            <p class="function__text">
+              個人利用ではなく、チーム管理を行うことができます。管理者は、ダッシュボードからチームの業務改善状況や、エージェント利用状況を確認することができます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section class="price" id="price">
+      <div class="price__inner">
+        <h2 class="section__head">
+          <span class="section__head-main">Price</span>
+          <span class="section__head-sub">料金システム</span>
+        </h2>
+        <div class="price__contents">
+          <div class="price__table">
+            <!-- thead -->
+            <div class="price__header" style="opacity: 0"></div>
+
+            <div class="price__header">
+              <div class="price__heading">
+                <span class="price__heading-main">フリープラン</span
+                ><span class="price__heading-sub">Free</span>
+              </div>
+              <p class="price__para">
+                最新のAI技術や、AIツール、AIの活用方法に関する情報を取得したい方向け
+              </p>
+              <p class="price__money">
+                <span class="price__money-yen">￥</span
+                ><span class="price__money-number">0</span>
+              </p>
+              <a href="#" class="price__button" role="button">無料で始める</a>
+            </div>
+            <div class="price__header">
+              <div class="price__heading">
+                <span class="price__heading-main">パーソナルプラン</span
+                ><span class="price__heading-sub">Personal</span>
+              </div>
+              <p class="price__para">
+                個人で最新のLLMモデル（chatGPT-4等）利用、AI活用で業務効率化をしたい方向け
+              </p>
+              <p class="price__money">
+                <span class="price__money-yen">月額￥</span>
+                <span class="price__money-number">980</span>
+                <span class="price__money-yen">/1ID</span>
+              </p>
+              <a href="#" class="price__button" role="button">今すぐ始める</a>
+            </div>
+            <div class="price__header">
+              <div class="price__heading">
+                <span class="price__heading-main">フリープラン</span
+                ><span class="price__heading-sub">Free</span>
+              </div>
+              <p class="price__para">
+                最新のAI技術や、AIツール、AIの活用方法に関する情報を取得したい方向け
+              </p>
+              <p class="price__money">
+                <span class="price__contact">お問い合わせ<br />ください</span>
+              </p>
+              <a href="#" class="price__button" role="button">問い合わせる</a>
+            </div>
+            <!-- tbody -->
+            <!-- row1 -->
+            <div class="price__item colum-1 row-even">AI Tips機能</div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+
+            <!-- row2 -->
+            <div class="price__item colum-1">AI/ITツール検索機能</div>
+            <div class="price__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+
+            <!-- row3 -->
+            <div class="price__item colum-1 row-even">AIエージェント機能</div>
+            <div class="price__item row-even"></div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+
+            <!-- row4 -->
+            <div class="price__item colum-1">プロンプト設定機能</div>
+            <div class="price__item"></div>
+            <div class="price__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+
+            <!-- row5 -->
+            <div class="price__item colum-1 row-even">ロール設定機能</div>
+            <div class="price__item row-even"></div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+
+            <!-- row6 -->
+            <div class="price__item colum-1">
+              AI業務改善提案機能(AI-OJT機能)
+            </div>
+            <div class="price__item"></div>
+            <div class="price__item"></div>
+            <div class="price__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+
+            <!-- row7 -->
+            <div class="price__item colum-1 row-even">チーム機能</div>
+            <div class="price__item row-even"></div>
+            <div class="price__item row-even"></div>
+            <div class="price__item row-even">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="21"
+                viewBox="0 0 26 21"
+                fill="none"
+                class="price__check"
+              >
+                <path
+                  d="M9.00022 20.7268L0.720215 12.4468L4.49355 8.6735L9.00022 13.1935L22.1735 0.00683594L25.9469 3.78017L9.00022 20.7268Z"
+                  fill="#599CC2"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="pice__explain-wrapper">
+            <div class="pice__explain">
+              <div class="price__explain-head">
+                ビジネスチームプランについて
+              </div>
+              <p class="price__explain-para">
+                ・お問い合わせ頂いた方には、弊社が提供する<span
+                  class="price__explain-blue"
+                  >生成AI研修のカリキュラム一部（180ページ分）とAI活用事例集をプレゼント！</span
+                >
+              </p>
+              <p class="price__explain-para">
+                ※弊社が提供する生成AI活用研修（SEC-AI）、およびAI業務改善（AI-OJT）と併用することで、更にお得に利用することが可能となります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- qa -->
+    <section class="qa" id="qa">
+      <div class="qa__inner">
+        <h2 class="section__head">
+          <span class="section__head-main">Question</span>
+          <span class="section__head-sub">よくある質問</span>
+        </h2>
+        <div class="qa__contents">
+          <div class="qa__boxes">
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q.</span>
+                <span class="qa-box__head-text"
+                  >社内GPT構築サービスと類似したサービスですか？</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A.</span>
+                  <span class="qa-box__a-text"
+                    >類似点はありますが、コンセプトが異なります。わたしたちは、AI活用人材の普及に主眼をおいており、「教育」の重要性を理解しています。そのため、本サービスを活用することで、AIの理解が深まり、自身でAIをマネジメントできる人材になって頂きたいと考えています。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q.</span>
+                <span class="qa-box__head-text"
+                  >AIエージェントで使えるLLMモデルを教えてください。</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A.</span>
+                  <span class="qa-box__a-text"
+                    >現在は、GPT-3.5、GPT-4を利用することが可能です。また、OpenInterpriter機能を搭載しているため、データ分析も可能です。今後、利用シーンに合わせたLLMモデルの最適化を行っていくため、Claude2、GPT-4V、PaLM2、Lamaなども対応していく可能性があります。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q.</span>
+                <span class="qa-box__head-text"
+                  >AIエージェントで入力した情報は学習に使われますか？</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A.</span>
+                  <span class="qa-box__a-text"
+                    >使われません。AzureOpenAIサービスを利用しているため、学習データとして使われることはありません。また、他のLLMモデルに関しても学習されないモデルのみを利用します。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q.</span>
+                <span class="qa-box__head-text"
+                  >フリープラン登録した後に、パーソナルプランやビジネスチームプランにアップグレード可能ですか？</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A.</span>
+                  <span class="qa-box__a-text"
+                    >可能です。パーソナルプランは、マイページからアップグレード可能です。ビジネスチームプランはワークスペース管理になるため、管理者からの招待を受ける必要がありますが、既存アカウントと紐づけすることができます。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q.</span>
+                <span class="qa-box__head-text"
+                  >企業で導入を考えています。研修や業務改善サポートも行って頂くことは可能ですか？</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A.</span>
+                  <span class="qa-box__a-text"
+                    >可能です。ビジネスチームプランの問い合わせフォームからご連絡ください。生成AI活用を含む1,000を超える学習プログラムと、AI業務改善（AI-OJT）のハンズオンレクチャーも行っております。まずは、お問い合わせください。</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cv -->
+    <section class="cv">
+      <div class="cv__inner">
+        <div class="cv__contents">
+          <div class="cv__card">
+            <p class="cv__free-word">
+              ＼1分で登録完了！／<br />AI活用の最新情報を取得！
+            </p>
+            <div class="cv__button-wrapper">
+              <a class="cv__free-button" href="#" role="button"
+                ><span class="cv__free-icon"
+                  ><img src="./img/man_icon.png" alt="人型のアイコン" /></span
+                ><span class="cv__free-text">無料アカウント登録をする</span></a
+              >
+            </div>
+          </div>
+
+          <div class="cv__card">
+            <p class="cv__contact-word">
+              弊社が提供する生成AI研修のカリキュラム<br />
+              （180ページ分）とAI活用事例集をプレゼント！
+            </p>
+            <div class="cv__button-wrapper">
+              <a class="cv__contact-button" href="#" role="button"
+                ><span class="cv__contact-icon"
+                  ><img src="./img/mail_icon.png" alt="人型のアイコン" /></span
+                ><span class="cv__contact-text"
+                  >ビジネスプランを問い合わせる</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vision -->
+    <section class="vision" id="vision">
+      <div class="vision__inner">
+        <h2 class="section__head">
+          <span class="section__head-main">Vision</span>
+          <span class="section__head-sub">わたしたちの想い</span>
+        </h2>
+        <div class="vision__contents">
+          <div class="vision__box vision__box-reverse">
+            <div class="vision__img">
+              <img src="./img/cpu_vision.jpg" alt="AIのCPU" />
+            </div>
+            <div class="vision__text">
+              <h3 class="vision__head">
+                AIの民主化。<br />"作る"AIから、"使う"AIへ
+              </h3>
+              <p class="vision__word">
+                <span
+                  >弊社がAI事業をスタートしたのは2015年、第3次AIブームが少し経過した頃です。<br />
+                  自然言語処理を中心としたAIチャットボット開発を手掛けており、補助金などを活用した自社プロダクト開発を目指しましたが、鳴かず飛ばずで終了。その後は、システムインテグレーションを中心に事業を展開していました。</span
+                >
+                <span
+                  >そして今回の生成AIブームで、改めてAI事業にコミット。</span
+                >
+                <span
+                  >今までは、AIの開発が主流であったため、資金力のある企業しかチャレンジできませんでした。しかし、生成AIの登場によりAIが民主化。その結果、中小企業はもちろんのこと個人でもAIを使用する時代になりました。</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="vision__box">
+            <div class="vision__img">
+              <img src="./img/logo_vision.jpg" alt="TaskMentorAIのロゴ" />
+            </div>
+            <div class="vision__text">
+              <h3 class="vision__head">プロダクト名に込められた想い</h3>
+              <p class="vision__word">
+                <span
+                  >AI業界では、ゴールに向かって自律的に動作するエージェントAIが注目されており、このプロダクトには、仕事を自動化・効率化していくためのエージェントAIを搭載しています。<br />
+                  しかし、すべてをAIに任せるのではなく、人とAIが協力して業務を行っていくことが重要です。</span
+                >
+
+                <span
+                  >そのため、AI活用を促進させる情報やTips（ヒント）の提供、研修によるサポートでAI活用人材を育成しつつ、エージェントAIを活用して業務上のタスクに対するアドバイスや支援を行います。TaskMentorAI（タスクメンターエーアイ）をビジネスの最強のパートナーとして使いこなしていただき、業務改善やビジネスの成長に繋げていただきたいと考えています。</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="vision__box vision__box-reverse">
+            <div class="vision__img">
+              <img src="./img/ai_vision.jpg" alt="ロボットと人の手" />
+            </div>
+            <div class="vision__text">
+              <h3 class="vision__head">未来の働き方を、AIと共に。</h3>
+              <p class="vision__word">
+                <span
+                  >現在の課題は、AIの"活用方法"です。<br />
+                  たくさんのAIソリューションが登場する中で、多くの人はビジネスへの活かし方がわかっていません。</span
+                >
+                <span
+                  >わたしたちは、AIソリューションを紹介するだけではなく、使い方やレクチャーを行う事業もスタートしており、AI活用人材を増やしています。それらのナレッジを本プロダクトに詰め込んで、みなさんに届けたいと考えています。</span
+                >
+                <span
+                  >わたしたちは「日本が世界で最もAIを活用している」と言われる、そんな世界を目指します。</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- company -->
+    <section class="company" id="company">
+      <div class="company__inner">
+        <h2 class="section__head section__head-white">
+          <span class="section__head-main">Company</span>
+          <span class="section__head-sub">運営会社情報</span>
+        </h2>
+
+        <div class="company__contents">
+          <div class="company__info">
+            <span class="company__head">商号</span>
+            <p class="company__para">
+              株式会社AROUTECH（アルーテック）（英名：AROUTECH. Co.,Ltd.）
+            </p>
+          </div>
+
+          <div class="company__info">
+            <span class="company__head">所在地</span>
+            <div class="company__text">
+              <p class="company__para">
+                本社<br />
+                〒123-4567　東京都港区テックビル1-2-3　技術町 Tech Town
+              </p>
+              <p class="company__para">
+                バングラデシュ支社（Web3・メタバース研究、プロダクト開発拠点）<br />
+                123 Tech Lane, Innovation City Cyberburg, CB 56789 Techtopia
+              </p>
+            </div>
+          </div>
+
+          <div class="company__info">
+            <span class="company__head">設立</span>
+            <p class="company__para">2013年9月26日</p>
+          </div>
+
+          <div class="company__info">
+            <span class="company__head">資本金</span>
+            <p class="company__para">20,000,000円</p>
+          </div>
+
+          <div class="company__info">
+            <span class="company__head">URL</span>
+            <p class="company__para">
+              <a class="company__link" href="#">https://www.aroutech.ccom</a>
+            </p>
+          </div>
+
+          <div class="company__info">
+            <span class="company__head">役員</span>
+            <div class="company__ceo">
+              <div class="comany__ceo-name">
+                <span>代表取締役CEO</span><span>山田 太郎</span>
+              </div>
+              <div class="comany__ceo-name">
+                <span>代表取締役CEO</span><span>山田 太郎</span>
+              </div>
+              <div class="comany__ceo-name">
+                <span>代表取締役CEO</span><span>山田 太郎</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="company__info">
+            <span class="company__head">事業内容</span>
+            <p class="company__para">
+              AIインテグレーション事業<br />Webインテグレーション事業<br />
+              AI研究／プロダクト開発事業
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <h2 class="section__head">
+          <span class="section__head-main">Contact</span>
+          <span class="section__head-sub">お問い合わせ</span>
+        </h2>
+        <div class="contact__contents">
+          <p class="contact__text">
+            この度は、TaskMentorAIサービスご案内ページをご覧いただきありがとうございます。<br />
+            必要事項を記入の上、フォームを送信してください。
+          </p>
+          <form class="contact__form">
+            <div class="cotact__fields">
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-age" class="form-field__label"
+                      >お問い合わせ種別</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <select name="your-age" id="your-age" class="form-select">
+                      <option value="">選択してください</option>
+                      <option value="">商品購入</option>
+                      <option value="">商品の不具合</option>
+                      <option value="">融資計画</option>
+                      <option value="">採用</option>
+                      <option value="">その他</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-name" class="form-field__label"
+                      >お名前</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <input
+                      type="text"
+                      name="your-name"
+                      id="your-name"
+                      placeholder="山田　太郎"
+                      class="form-text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-email" class="form-field__label"
+                      >会社名</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <input
+                      type="email"
+                      name="your-company"
+                      id="your-company"
+                      class="form-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-name" class="form-field__label"
+                      >担当部署</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <input
+                      type="text"
+                      name="your-part"
+                      id="your-part"
+                      class="form-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-name" class="form-field__label"
+                      >Eメール</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <input
+                      type="text"
+                      name="your-mail"
+                      id="your-mail"
+                      placeholder="example@example.ne.jp"
+                      class="form-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-name" class="form-field__label"
+                      >電話番号</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <input
+                      type="text"
+                      name="your-tell"
+                      id="your-tell"
+                      placeholder="0123456789"
+                      class="form-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <span class="form-field_tag">必須</span>
+                    <label for="your-message" class="form-field__label"
+                      >お問い合わせ内容</label
+                    >
+                  </div>
+                  <div class="form-field__item">
+                    <textarea
+                      name="your-message"
+                      id="your-message"
+                      class="form-textarea"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__privacy-text">
+              ご記入いただいた個人情報は、お問い合わせに対する回答や業務上の連絡を取る目的のみで使用し、第三者に提供することはございません。
+            </div>
+
+            <div class="contact__privacy">
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  name="your-privacy"
+                  class="form-checkbox__input"
+                />
+                <span class="form-checkbox__text"
+                  >上記を確認し、同意する。</span
+                >
+              </label>
+            </div>
+            <div class="contact__button">
+              <input
+                type="submit"
+                value="フォームを送信する"
+                class="contact__submit"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__contents">
+          <div class="footer__colum">
+            <div class="footer__info">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#">TOP</a></li>
+                <li class="footer__item"><a href="#function">機能紹介</a></li>
+                <li class="footer__item"><a href="#price">料金システム</a></li>
+                <li class="footer__item"><a href="#qa">よくある質問</a></li>
+              </ul>
+
+              <ul class="footer__log">
+                <li class="footer__info"><a href="#">会社情報</a></li>
+                <li class="footer__login"><a href="#">ログイン</a></li>
+              </ul>
+            </div>
+            <div class="footer__co">
+              <ul class="footer__privacy">
+                <li class="footer__policy">
+                  <a href="#">プライバシーポリシー</a>
+                </li>
+                <li class="footer__policy">
+                  <a href="#">特定商取引法に基づく表示</a>
+                </li>
+              </ul>
+              <p class="footer__right">&copy; 2024 AROUTECH. Co.,Ltd.</p>
+            </div>
+          </div>
+          <div class="footer__img">
+            <img src="./img/logo_white_tate.png" alt="TaskMentorAIのロゴ" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- javaScript,ライブラリ読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
